@@ -1,11 +1,6 @@
-# Project Name:     Lab 2 - Test Case Design
-# Authors:          Hezekiah Cua - 100964164
-#                   Spencer DaSilva
-# Date:             February 2025
-# Description:      A program that can store and retrieve information related
-#                   to a user's reading list.
-
 import csv
+from os import remove
+
 
 # Function to add a book to the reading list
 def add_book(title, author, year):
@@ -32,11 +27,17 @@ def search_book(title):
                 return
         print('Book not found')
 
+# Function to delete a book to the reading list
+def delete_book(title, author, year):
+    with open('books.csv', mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([title, author, year])
+
 
 # Menu loop
 def menu():
     while True:
-        print("\n1. Add Book\n2. List Books\n3. Search Book\n4. Quit")
+        print("\n1. Add Book\n2. List Books\n3. Search Book\n4. Remove\n5. Quit")
         choice = input("Select an option: ")
 
         if choice == '1':
@@ -50,6 +51,11 @@ def menu():
             title = input("Enter book title to search: ")
             search_book(title)
         elif choice == '4':
+            title = input("Enter book title: ")
+            author = input("Enter author name: ")
+            year = input("Enter year of publication: ")
+            delete_book(title, author, year)
+        elif choice == '5':
             break
         else:
             print("Invalid choice. Try again.")
