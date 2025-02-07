@@ -21,15 +21,18 @@ def list_books():
         for row in reader:
             print(f'Title: {row[0]}, Author: {row[1]}, Year: {row[2]}')
 
-def delete_book(row):
-    with open('books.csv', mode='r') as file:
-        writer = csv.writer(file)
-        reader = csv.reader(writer)
+def delete_book(title):
+    with open('books.csv', mode='r', newline='') as file:
+        reader = csv.reader(file)
         rows = list(reader)
-        del rows[row]
-    with open('books.csv', mode='a', newline='') as file:
+        updated_list = []
+    for row in rows:
+        if row[0] != title:
+            updated_list.append(row)
+    with open('books.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(rows)
+        writer.writerows(updated_list)
+
 
 
 # Function to search for a book by title
@@ -63,10 +66,10 @@ def menu():
             break
         elif choice =='5':
             try:
-                user_input = int(input("Which row do you want to delete?: "))
+                user_input = input("Which book do you want to delete?: ")
                 delete_book(user_input)
             except:
-                print("Not a real row")
+                print("Not a real book")
         else:
             print("Invalid choice. Try again.")
 
