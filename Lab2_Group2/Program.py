@@ -21,19 +21,6 @@ def list_books():
         for row in reader:
             print(f'Title: {row[0]}, Author: {row[1]}, Year: {row[2]}')
 
-def delete_book(title):
-    with open('books.csv', mode='r', newline='') as file:
-        reader = csv.reader(file)
-        rows = list(reader)
-        updated_list = []
-    for row in rows:
-        if row[0] != title:
-            updated_list.append(row)
-    with open('books.csv', mode='w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(updated_list)
-
-
 
 # Function to search for a book by title
 def search_book(title):
@@ -41,9 +28,28 @@ def search_book(title):
         reader = csv.reader(file)
         for row in reader:
             if row[0].lower() == title.lower():
-                print(f'Found: Title: {row[0]}, Author: {row[1]}, Year: {row[2]}')
-                return
-        print('Book not found')
+                result = f'Found: Title: {row[0]}, Author: {row[1]}, Year: {row[2]}'
+                print(result)
+                return result
+            else:
+                return "Book not found"
+
+def delete_book(title):
+    if search_book(title) == 'Book not found':
+        output = "Book doesn't exist."
+    else:
+        with open('books.csv', mode='r', newline='') as file:
+            reader = csv.reader(file)
+            rows = list(reader)
+            updated_list = []
+        for row in rows:
+            if row[0] != title:
+                updated_list.append(row)
+        with open('books.csv', mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(updated_list)
+        output = f"{title} successfully deleted"
+    return output
 
 
 # Menu loop

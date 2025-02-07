@@ -20,11 +20,13 @@ class TestFunctions(unittest.TestCase):
         expected_output = "Found: Title: Test Book, Author: Author Name, Year: 2022"
         self.assertEqual(output_result, expected_output, "search_book did not return the expected output.")
 
-    # test_delete_book(self):
-        #"""Test deleting a book"""
-        #output_result = delete_book("Test Book")
+    def test_delete_book(self):
+        """Test deleting a book"""
+        output_result = delete_book("Test Book")
+        expected_output = "Book doesn't exist."
+        self.assertEqual(output_result, expected_output, "delete_book did not delete the book")
+
 
 
 if __name__ == '__main__':
     unittest.main()
-
