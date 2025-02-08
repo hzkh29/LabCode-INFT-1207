@@ -31,11 +31,10 @@ def search_book(title):
                 result = f'Found: Title: {row[0]}, Author: {row[1]}, Year: {row[2]}'
                 print(result)
                 return result
-            else:
-                return "Book not found"
+    return "Book not found"
 
 def delete_book(title):
-    if search_book(title) == 'Book not found':
+    if search_book(title) == "Book not found":
         output = "Book doesn't exist."
     else:
         with open('books.csv', mode='r', newline='') as file:
