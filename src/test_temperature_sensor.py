@@ -9,8 +9,8 @@ class TestTemperatureSensor(unittest.TestCase):
         self.assertEqual(validate_temperature("150"), 150.0)
 
     def test_validate_temperature_invalid(self):
-        self.assertRaises(validate_temperature("abc"))
-        self.assertRaises(validate_temperature("200"))
+        self.assertIsNone(validate_temperature("abc"))
+        self.assertIsNone(validate_temperature("200"))
 
     def test_process_temperatures_valid(self):
         temps = ["20", "30", "40"]
