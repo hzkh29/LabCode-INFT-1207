@@ -1,5 +1,5 @@
 import unittest
-from src.temperature_sensor import validate_temperature, process_temperatures
+from ICE3_Hezekiah.src.temperature_sensor import validate_temperature, process_temperatures
 
 
 class TestTemperatureSensor(unittest.TestCase):
