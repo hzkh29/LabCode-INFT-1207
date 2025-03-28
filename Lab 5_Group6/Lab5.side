@@ -1,0 +1,353 @@
+{
+  "id": "21186d4f-984b-43a9-b616-410db5ba79fa",
+  "version": "2.0",
+  "name": "Lab5",
+  "url": "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html?color=57&material=38&size=168&style_general=136",
+  "tests": [{
+    "id": "a9ff58cd-32eb-4baf-a5ce-4466e8c9e925",
+    "name": "test1",
+    "commands": [{
+      "id": "e7545d7b-e7de-4ecd-8b4a-50b65059dbb0",
+      "comment": "",
+      "command": "open",
+      "target": "https://magento.softwaretestingboard.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fcaa2d2-f20e-458d-802c-ae944a70ab59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "874fdc26-c52c-4269-98fe-5fd9058955e4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//span[normalize-space()='Women']",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "ca02f658-c865-47d1-90cf-65340f4ee0ac",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "//span[normalize-space()='Women']",
+      "targets": [],
+      "value": "Women"
+    }, {
+      "id": "76b28479-79f8-4355-9ae6-30a83bd9a138",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//a[@id='ui-id-9']//span[contains(text(),'Tops')]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "311c684c-ef4c-445e-90ac-ccf4ba91f2da",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "//a[@id='ui-id-9']//span[contains(text(),'Tops')]",
+      "targets": [],
+      "value": "Tops"
+    }, {
+      "id": "243583d1-419b-43ef-91db-3db7f63fe396",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//a[@id='ui-id-12']//span[contains(text(),'Hoodies & Sweatshirts')]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "2c0f772c-0b49-494e-ab3b-a866b2634eb5",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@id='ui-id-12']//span[contains(text(),'Hoodies & Sweatshirts')]",
+      "targets": [
+        ["css=#ui-id-12 > span", "css:finder"],
+        ["xpath=//a[@id='ui-id-12']/span", "xpath:idRelative"],
+        ["xpath=//li/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hoodies & Sweatshirts')]", "xpath:innerText"]
+      ],
+      "value": "Hoodies & Sweatshirts"
+    }]
+  }, {
+    "id": "57d7bb94-db41-4fa8-b832-4e20dabbfeb3",
+    "name": "test2",
+    "commands": [{
+      "id": "1d3ddfb9-f34f-4a4a-9050-4062c2e08e4e",
+      "comment": "",
+      "command": "open",
+      "target": "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4123a89c-4f1a-4ae6-8687-1b94f9da5014",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1447x999",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65f529e5-bb55-4d42-85f5-cf6398a721f2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-options-item:nth-child(1) > .filter-options-title",
+      "targets": [
+        ["css=.filter-options-item:nth-child(1) > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfec2a7e-5eb8-410d-9a60-7ead06ffe0e4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div/div",
+      "targets": [
+        ["css=.filter-options-item:nth-child(1) > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87da34f1-f38b-4753-985c-e274c6aaed36",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div/div[2]/ol/li[3]/a",
+      "targets": [
+        ["css=.allow .item:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div[2]/ol/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html?style_general=136')]", "xpath:href"],
+        ["xpath=//ol/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5e4d5a4-2a67-4669-95f3-0984d344d01c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='narrow-by-list']/div/div",
+      "targets": [
+        ["css=.filter-options-item:nth-child(1) > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53b83f69-52d9-4f1c-8d5e-3cbeee06f827",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div/div",
+      "targets": [
+        ["css=.allow > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d18b9546-0645-4c99-a5fd-bd0947fa3d91",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div/div[2]/div/div/a[3]/div",
+      "targets": [
+        ["css=.swatch-option-link-layered:nth-child(3) > .text", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div/div[2]/div/div/a[3]/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3528929-5043-4744-9b63-2781b3e1e7ac",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='narrow-by-list']/div[2]/div",
+      "targets": [
+        ["css=.filter-options-item:nth-child(2) > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e206d99-b137-4cf6-9bfc-e28eaf1fc723",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div[2]/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ac8adeb-f99d-402c-99f9-9e1e2f0b0b9a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div[2]/div[2]/div/div/a[4]/div",
+      "targets": [
+        ["css=.swatch-option-link-layered:nth-child(4) > .swatch-option", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div[2]/div[2]/div/div/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b336461-0a03-4e64-bc10-6c7de269dd3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div[8]/div",
+      "targets": [
+        ["css=.active > .filter-options-title", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div[8]/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72fc3d19-7e22-4071-a00b-311cc8dce036",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div[8]",
+      "targets": [
+        ["css=.filter-options-item:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div[8]", "xpath:idRelative"],
+        ["xpath=//div[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "422d4007-8818-4b7a-832c-f462ac251c5a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='narrow-by-list']/div[8]/div[2]/ol/li[2]/a/span",
+      "targets": [
+        ["css=.item:nth-child(2) > a > .price:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='narrow-by-list']/div[8]/div[2]/ol/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/ol/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$50.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35932f7e-c4fe-4bcb-b23e-7cd7c929f2c5",
+    "name": "test3",
+    "commands": [{
+      "id": "21b0e71d-873d-40dc-8503-33886a5a2d17",
+      "comment": "",
+      "command": "open",
+      "target": "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html?color=57&material=38&size=168&style_general=136#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5f1138b-dfa7-4f26-9610-85994665a1f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24bc0358-b3ac-4d7c-9f6d-c52f394cbce7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product > .product-image-container .product-image-photo",
+      "targets": [
+        ["css=.product > .product-image-container .product-image-photo", "css:finder"],
+        ["xpath=//img[@alt='Autumn Pullie-M-Purple']", "xpath:img"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[3]/ol/li/div/a/span/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li/div/a/span/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fadf797a-9068-4604-bbb2-a27604ea6812",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=(//button[@type='submit'])[2]",
+      "targets": [
+        ["css=.tocart", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[3]/ol/li/div/div/div[4]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "3e2ab3cf-8486-4ec0-802d-861fb3b97daf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tocart",
+      "targets": [
+        ["css=.tocart", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[3]/ol/li/div/div/div[4]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e01d1ace-6407-4297-a09b-89d383744863",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='submit'])[2]",
+      "targets": [
+        ["css=.tocart", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[3]/ol/li/div/div/div[4]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa36669d-db56-4ca6-a1a4-0a9e39d41c52",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=shopping cart",
+      "targets": [
+        ["linkText=shopping cart", "linkText"],
+        ["css=.message-success a", "css:finder"],
+        ["xpath=//a[contains(text(),'shopping cart')]", "xpath:link"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://magento.softwaretestingboard.com/checkout/cart/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'shopping cart')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "47c1e18a-917f-4f5e-8ced-0e46f7125fc2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=shopping cart",
+      "targets": [
+        ["linkText=shopping cart", "linkText"],
+        ["css=.message-success a", "css:finder"],
+        ["xpath=//a[contains(text(),'shopping cart')]", "xpath:link"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://magento.softwaretestingboard.com/checkout/cart/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ca57b9c-0d91-41f5-948e-79312211608e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=(//button[@type='button'])[3]",
+      "targets": [
+        ["css=.item > .primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[2]/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "3234fe66-41e2-4083-a52f-78d6b8e18e3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item > .primary",
+      "targets": [
+        ["css=.item > .primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//main[@id='maincontent']/div[3]/div/div[2]/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "25c2f66a-6dac-4e43-b957-5c1e69ef64ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://magento.softwaretestingboard.com/", "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html", "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html?color=57&material=38&size=168&style_general=136", "https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html?color=57&material=38&size=168&style_general=136#"],
+  "plugins": []
+}
