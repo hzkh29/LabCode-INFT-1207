@@ -15,25 +15,35 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+
+# Launches the Firefox
 class TestTest13():
   def setup_method(self, method):
     self.driver = webdriver.Firefox()
     self.vars = {}
-  
+
+# Closes Firefox once test is done
   def teardown_method(self, method):
     self.driver.quit()
-  
+
+
   def test_test13(self):
     self.driver.get("https://magento.softwaretestingboard.com/")
     self.driver.set_window_size(1936, 1048)
+
+    # Hovers on the Women menu option
     WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located((By.XPATH, "//span[normalize-space()=\'Women\']")))
     element = self.driver.find_element(By.XPATH, "//span[normalize-space()=\'Women\']")
     actions = ActionChains(self.driver)
     actions.move_to_element(element).perform()
+
+    # Hovers on the Tops option
     WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located((By.XPATH, "//a[@id=\'ui-id-9\']//span[contains(text(),\'Tops\')]")))
     element = self.driver.find_element(By.XPATH, "//a[@id=\'ui-id-9\']//span[contains(text(),\'Tops\')]")
     actions = ActionChains(self.driver)
     actions.move_to_element(element).perform()
+
+    # Hovers on the Hoodies and Sweatshirts option then clicks it
     WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located((By.XPATH, "//a[@id=\'ui-id-12\']//span[contains(text(),\'Hoodies & Sweatshirts\')]")))
     self.driver.find_element(By.XPATH, "//a[@id=\'ui-id-12\']//span[contains(text(),\'Hoodies & Sweatshirts\')]").click()
   

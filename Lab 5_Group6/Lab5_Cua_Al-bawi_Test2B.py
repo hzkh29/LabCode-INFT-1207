@@ -32,7 +32,6 @@ class TestTest2():
     self.driver.get("https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html")
     self.driver.set_window_size(1447, 999)
 
-    # Hovering and clicking the filter options to choose
     element = self.driver.find_element(By.CSS_SELECTOR, ".filter-options-item:nth-child(1) > .filter-options-title")
     actions = ActionChains(self.driver)
     actions.move_to_element(element).perform()
